@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ITWork\\GitProjects\\TikTok_Events\\TikTok_Events.csproj": {}
+    "E:\\ITWork\\GitProjects\\TikTok_Events\\TikTok_Events_dotnet\\TikTok_Events.csproj": {}
   },
   "projects": {
-    "E:\\ITWork\\GitProjects\\TikTok_Events\\TikTok_Events.csproj": {
+    "E:\\ITWork\\GitProjects\\TikTok_Events\\TikTok_Events_dotnet\\TikTok_Events.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ITWork\\GitProjects\\TikTok_Events\\TikTok_Events.csproj",
+        "projectUniqueName": "E:\\ITWork\\GitProjects\\TikTok_Events\\TikTok_Events_dotnet\\TikTok_Events.csproj",
         "projectName": "TikTok_Events",
-        "projectPath": "E:\\ITWork\\GitProjects\\TikTok_Events\\TikTok_Events.csproj",
+        "projectPath": "E:\\ITWork\\GitProjects\\TikTok_Events\\TikTok_Events_dotnet\\TikTok_Events.csproj",
         "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
-        "outputPath": "E:\\ITWork\\GitProjects\\TikTok_Events\\obj\\",
+        "outputPath": "E:\\ITWork\\GitProjects\\TikTok_Events\\TikTok_Events_dotnet\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -48,6 +48,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
