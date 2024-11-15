@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TikTok_Events")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1340508936846d9de0854b062ca3e6fd7fb16e5e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2424b777be2e2c68ac525e9e1a2f14a7d75f301a")]
 [assembly: System.Reflection.AssemblyProductAttribute("TikTok_Events")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TikTok_Events")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
