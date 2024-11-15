@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "1NtTipno8aAX21iYrSzHwgPOlfBHGRB0FpxvI1Auecxu78ouUSxBYWknSOGrQhqdhIR/hl9j0x3iiEmqm5YgJw==",
+  "dgSpecHash": "rvGUIbPmPNw=",
   "success": true,
-  "projectFilePath": "E:\\ITWork\\GitProjects\\TikTok_Events\\TikTok_Events_dotnet\\TikTok_Events.csproj",
+  "projectFilePath": "C:\\Users\\sdkan\\Source\\Repos\\TikTok_Events\\TikTok_Events_dotnet\\TikTok_Events.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\1\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\sdkan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }
