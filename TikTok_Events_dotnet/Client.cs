@@ -1,15 +1,59 @@
 // See https://aka.ms/new-console-template for more information
+using Newtonsoft.Json;
 using System;
 using System.Net.WebSockets;
 using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
 
-namespace Client
+
+namespace TikTok_Event_Effects
 {
+    public delegate void OnEvent();
+    //public class WebSocketClient1
+    //{
+        
+    //    public OnEvent OnEventHandler { get; set; }
+
+
+    //    public async Task Connection()
+    //    {
+    //        await Task.Delay(1000);
+
+    //        using (var ws = new WebSocketSharp.WebSocket("ws://localhost:21213/")) // Server URL
+    //        {
+    //            // Подписываемся на событие OnMessage
+    //            ws.OnMessage += (sender, e) =>
+    //            {
+    //                // Десериализация полученных JSON данных
+    //                var data = JsonConvert.DeserializeObject<MyData>(e.Data);
+    //                OnEventHandler();
+    //                Console.WriteLine($"event: {data.@event}, data: {data.data}"); 
+                    
+    //            };
+
+    //            ws.Connect();
+
+
+    //            // Ожидаем ввода для выхода
+    //            Console.WriteLine("Press any key to exit...");
+    //            Console.ReadKey();
+    //        }
+    //    }
+    //}
+
+    //public class MyData      // Deserialize Class
+    //{
+    //    public string @event = "";
+    //    public string data = "";
+    //}
+
+
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public class WebSocketClient
     {
+
+        public OnEvent OnEventHandler { get; set; }
+
         private ClientWebSocket _websocket = null;
 
         public async Task ConnectAsync()
@@ -71,6 +115,8 @@ namespace Client
         {
             var parsedData = JsonConvert.DeserializeObject<ParsedData>(message); // Deserialize JSON data
 
+            OnEventHandler();
+
             Console.WriteLine("Data received: " + JsonConvert.SerializeObject(parsedData, Formatting.Indented));
 
             // Here you can implement additional logic for handling the parsed data,
@@ -89,11 +135,14 @@ namespace Client
             // Add other properties as needed
         }
 
-        public static async Task Main(string[] args)
+        public async Task Connection()
         {
             var client = new WebSocketClient();
             await client.ConnectAsync();
         }
     }
+
+
+
 }
 

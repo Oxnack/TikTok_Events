@@ -30,3 +30,4 @@ E:\ITWork\GitProjects\TikTok_Events\TikTok_Events_dotnet\obj\Debug\net8.0\TikTok
 E:\ITWork\GitProjects\TikTok_Events\TikTok_Events_dotnet\obj\Debug\net8.0\TikTok_E.3BB4B306.Up2Date
 E:\ITWork\GitProjects\TikTok_Events\TikTok_Events_dotnet\obj\Debug\net8.0\TikTok_Events.genruntimeconfig.cache
 E:\ITWork\GitProjects\TikTok_Events\TikTok_Events_dotnet\obj\Debug\net8.0\ref\TikTok_Events.dll
+E:\ITWork\GitProjects\TikTok_Events\TikTok_Events_dotnet\bin\Debug\net8.0\websocket-sharp.dll
