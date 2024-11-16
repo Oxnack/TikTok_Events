@@ -215,12 +215,8 @@ namespace SystemEffects
 
         public static void Test(string[] args)
         {
-            MouseBlocker mb = new MouseBlocker();
-            KeyboardBlocker kb = new KeyboardBlocker();
-            ScreenBlocker sb = new ScreenBlocker();
-
-
-            //Task.WaitAll(sb.BlockScreen(10000));
+            
+            //Task.WaitAll(_sb.BlockScreen(10000));
         }
     }
    
