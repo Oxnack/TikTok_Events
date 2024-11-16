@@ -5,13 +5,14 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-
+using TikTok_Events;
 public class WebSocketClient
 {
     private ClientWebSocket _websocket = null;
 
     public async Task ConnectAsync()
     {
+        
         if (_websocket != null && _websocket.State == WebSocketState.Open) return; // Already connected
 
         _websocket = new ClientWebSocket();
