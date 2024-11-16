@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using TikTok_Events;
+using SystemEffects;
 public class WebSocketClient
 {
     private ClientWebSocket _websocket = null;
