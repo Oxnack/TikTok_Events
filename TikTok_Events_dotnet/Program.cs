@@ -16,13 +16,13 @@ namespace TikTok_Event_Effects
         public WebSocketClient _client = new WebSocketClient();
         public Effects _effects = new Effects();
 
-        private int blockScreen_time = 500;  // time to do effect [ms]
-        private int blockMouse_time = 500;
-        private int blockKeyboard_time = 500;
+        private int blockScreen_time = 10000;  // time to do effect [ms]
+        private int blockMouse_time = 2500;
+        private int blockKeyboard_time = 10000;
 
         private string blockScreen_giftName = "0";  // Names of Gifts
-        private string blockMouse_giftName = "1";
-        private string blockKeyboard_giftName = "2";
+        private string blockMouse_giftName = "Rose";
+        private string blockKeyboard_giftName = "Heart Me";
 
         public static async Task Main(string[] args)
         {
@@ -38,17 +38,17 @@ namespace TikTok_Event_Effects
         {
             Console.WriteLine("get event");
 
-            if (giftName == "giftName2_ToBlockScreen")   //Screen
+            if (giftName == blockScreen_giftName)   //Screen
             {
                 int time = n * blockScreen_time;
                 _effects.BlockScreen(time);
             }
-            if (giftName == "giftName1_ToBlockMouse")   //Mouse
+            if (giftName == blockMouse_giftName)   //Mouse
             {
                 int time = n * blockMouse_time;
                 _effects.BlockMouse(time);
             }
-            if (giftName == "giftName0_ToBlockKeyboard")   //Keyboard
+            if (giftName == blockKeyboard_giftName)   //Keyboard
             {
                 int time = n * blockKeyboard_time;
                 _effects.BlockKeyboard(time);
