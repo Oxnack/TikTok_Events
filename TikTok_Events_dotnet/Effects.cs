@@ -3,8 +3,36 @@ using System.Runtime.InteropServices;
 using System.Diagnostics;
 
 
-namespace SystemEffects
+namespace TikTok_Event_Effects
 {
+    public class Effects // main class that controls all the other classes
+    {
+        private MouseBlocker _mb = new MouseBlocker();
+        private KeyboardBlocker _kb = new KeyboardBlocker();
+        private ScreenBlocker _sb = new ScreenBlocker();
+
+        public void BlockScreen(int time) // all time in ms
+        {
+            Task.WaitAll(_sb.BlockScreen(time));
+        }
+
+        public void BlockMouse(int time)
+        {
+            Task.WaitAll(_mb.blockMouse(time));
+        }
+        public void BlockKeyboard(int time)
+        {
+            Task.WaitAll(_kb.blockKeyboard(time));
+        }
+
+        public static void Test(string[] args)
+        {
+
+            //Task.WaitAll(_sb.BlockScreen(10000));
+        }
+    }
+
+
     class MouseBlocker
     {
         public struct POINT
@@ -193,32 +221,7 @@ namespace SystemEffects
         }
     }
 
-    class Effects // main class that controls all the other classes
-    {
-        private MouseBlocker _mb = new MouseBlocker();
-        private KeyboardBlocker _kb = new KeyboardBlocker();
-        private ScreenBlocker _sb = new ScreenBlocker();
 
-        public async Task BlockScreen(int time) // all time in ms
-        {
-            Task.WaitAll(_sb.BlockScreen(time));
-        }
-
-        public async Task BlockMouse(int time)
-        {
-           Task.WaitAll( _mb.blockMouse(time));
-        }
-        public async Task BlockKeyboard(int time)
-        {
-            Task.WaitAll(_kb.blockKeyboard(time));
-        }
-
-        public static void Test(string[] args)
-        {
-            
-            //Task.WaitAll(_sb.BlockScreen(10000));
-        }
-    }
    
     
 
