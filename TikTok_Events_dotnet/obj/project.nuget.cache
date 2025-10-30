@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "jTZwbHfslNhPyOEuQqSSCqNf33t+GXjO75RvrCbiupytJRynQfYsFRb/t1J5yceJXb1uKgfWB4U3cFaHpOUH+w==",
+  "success": true,
+  "projectFilePath": "E:\\ITWork\\GitProjects\\TikTok_Events\\TikTok_Events_dotnet\\TikTok_Events.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\1\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\1\\.nuget\\packages\\websocketsharp-netstandard\\1.0.1\\websocketsharp-netstandard.1.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
